@@ -9,11 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+    let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
     
     @IBAction func StartAction(_ sender: Any) {
         spinner.center = view.center
         spinner.style = UIActivityIndicatorView.Style.gray
+        spinner.backgroundColor = UIColor.init(white: 0.5, alpha: 0.2)
         view.addSubview(spinner)
         spinner.startAnimating()
     }
